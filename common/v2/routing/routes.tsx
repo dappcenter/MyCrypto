@@ -24,7 +24,8 @@ import {
   SignAndVerifyMessage,
   BroadcastTransactionFlow,
   InteractWithContractsFlow,
-  DeployContractsFlow
+  DeployContractsFlow,
+  DeFiZapFlow
 } from 'v2/features';
 import { requiresDesktopApp } from './helpers';
 
@@ -185,5 +186,13 @@ export const APP_ROUTES: IAppRoute[] = [
     title: ROUTE_PATHS.DEPLOY_CONTRACTS.title,
     path: ROUTE_PATHS.DEPLOY_CONTRACTS.path,
     component: DeployContractsFlow
+  },
+  {
+    name: ROUTE_PATHS.DEFIZAP.name,
+    title: ROUTE_PATHS.DEFIZAP.title,
+    path: ROUTE_PATHS.DEFIZAP.path,
+    exact: true,
+    requireAccounts: true,
+    component: DeFiZapFlow
   }
 ];
