@@ -8,4 +8,3 @@ export { default as SignTransactionSafeT } from './SafeTmini';
 export { default as SignTransactionTrezor } from './Trezor';
 export { default as SignTransactionWalletConnect } from './WalletConnect';
 export { default as HardwareSignTransaction } from './Hardware';
-export * from './WalletConnect.reducer';
