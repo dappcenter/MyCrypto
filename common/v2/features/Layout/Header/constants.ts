@@ -52,6 +52,10 @@ export const links = [
       {
         to: '/helpers',
         title: 'Helpers'
+      },
+      {
+        to: ROUTE_PATHS.DEFIZAP.path,
+        title: 'DeFi Zap'
       }
     ]
   },
